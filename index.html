@@ -691,7 +691,7 @@
             <div class="info-section">
                 <h2>Bienvenue ! 👋</h2>
                 <p style="color: #666; line-height: 1.8; margin-bottom: 1.5rem;">
-                    Découvrez notre sélection de produits premium, soigneusement cuisinés et choisis. 
+                    Découvrez notre sélection de produits premium, soigneusement choisis et préparés. 
                     Parcourez nos catégories et passez commande directement via Telegram.
                 </p>
                 <button class="contact-btn" onclick="contactTelegram()">
@@ -777,7 +777,7 @@
                 <div class="info-item">
                     <div class="info-content">
                         <h3>Qualité garantie ?</h3>
-                        <p>Tous nos produits sont sélectionnés avec soin pour vous garantir la meilleure expérience et qualité.</p>
+                        <p>Tous nos produits sont sélectionnés avec soin pour vous garantir la meilleure qualité.</p>
                     </div>
                 </div>
             </div>
@@ -837,14 +837,14 @@
         // ========================================
         // ⚠️ REMPLACEZ CES VALEURS PAR VOS PROPRES IDENTIFIANTS FIREBASE
         const firebaseConfig = {
-  apiKey: "AIzaSyBxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  authDomain: "le-v-menu-xxxxx.firebaseapp.com",
-  databaseURL: "https://le-v-menu-xxxxx-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "le-v-menu-xxxxx",
-  storageBucket: "le-v-menu-xxxxx.appspot.com",
-  messagingSenderId: "123456789012",
-  appId: "1:123456789012:web:abcdefghijklmnop"
-};
+            apiKey: "AIzaSyBxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            authDomain: "le-v-menu-xxxxx.firebaseapp.com",
+            databaseURL: "https://le-v-menu-xxxxx-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "le-v-menu-xxxxx",
+            storageBucket: "le-v-menu-xxxxx.appspot.com",
+            messagingSenderId: "123456789012",
+            appId: "1:123456789012:web:abcdefghijklmnop"
+        };
 
         // ========================================
         // 📦 CONFIGURATION PRODUITS
@@ -869,11 +869,16 @@
                     ]
                 },
                 {
-                    id: Fleurs,
-                    name: 'Cali CANADA 🇨🇦🇺🇸',
-                    description: 'Purple Gelato🟣🍨 - Green Thumb Farm ℹ️Odeur de ZINZIIIN🚀.',
-                    price: '10€',
-                    media: [
+                    id: 'flowers',
+                    name: '🌿 Fleurs',
+                    products: [
+                        {
+                            id: 2,
+                            name: 'Cali CANADA 🇨🇦🇺🇸',
+                            description: 'Purple Gelato🟣🍨 - Green Thumb Farm ℹ️Odeur de ZINZIIIN🚀',
+                            price: '10€',
+                            badge: '🇨🇦',
+                            media: [
                                 {
                                      type: 'image',
                                      url: 'https://github.com/AppDropper/github.io-LeV/blob/main/gitkeep/IMG_5963.jpeg?raw=true'
@@ -882,16 +887,20 @@
                                     type: 'video',
                                     url: 'https://github.com/AppDropper/github.io-LeV/blob/main/gitkeep/-636874642319909691%20(2).mp4?raw=true'
                                 },
-                    badge: 'Top 1🥇',
-                    formats: [
-                        { name: 'Petite part (2)', price: '20€' },
-                        { name: 'Moyenne part (5)', price: '50€' },
-                        { name: 'Grande part (10)', price: '100€' },
-                        { name: 'Livraison', price: '🎁' }
-                    ],
-                ratings: [],
-                comments: []
-            },
+                            ],
+                            formats: [
+                                { name: '2', price: '20€' },
+                                { name: '3', price: '30€' },
+                                { name: '5', price: '50€' },
+                                { name: '8', price: '80€' },
+                                { name: '10', price: '100€' },
+                                { name: 'Livraison', price: '🎁' }
+                            ],
+                            ratings: [],
+                            comments: []
+                        }
+                    ]
+                },
                 {
                     id: 'sucre-iso',
                     name: 'Sucre Glass Isomère R/S',
